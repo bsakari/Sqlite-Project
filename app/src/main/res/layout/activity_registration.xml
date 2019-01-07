@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cc9191"
+        android:textColor="#0721b1"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        android:text="WECOME TO VOTER REGISTRATION FORM" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+
+        android:layout_marginTop="31dp"
+        android:hint="Enter Your name"
+
+        android:inputType="textPersonName"
+        android:paddingBottom="16dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:hint="Enter your Email Address"
+        android:inputType="textPersonName"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     android:layout_below="@+id/email"
+        android:inputType="textPersonName"
+        android:hint="Enter your Nation ID"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/id"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="103dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/id"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="23dp"
+            android:background="#4f11ea"
+            android:gravity="center"
+            android:onClick="saving"
+
+            android:text="SAVE"
+            android:textColor="#19b435"
+            android:textSize="20dp" />
+
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="111dp"
+            android:layout_height="86dp"
+            android:layout_below="@+id/id"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/save"
+            android:background="@android:color/holo_green_dark"
+            android:gravity="center"
+android:onClick="viewing"
+            android:text="VIEW" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:layout_below="@+id/save"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="60dp"
+            android:background="@android:color/holo_blue_bright"
+            android:text="SEARCH" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="106dp"
+            android:layout_height="78dp"
+            android:layout_below="@+id/view"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginRight="55dp"
+            android:layout_marginBottom="61dp"
+            android:layout_toRightOf="@+id/update"
+            android:background="@android:color/holo_orange_light"
+
+            android:onClick="Delete"
+            android:text="DELETE" />
+    </LinearLayout>
+</RelativeLayout>
